@@ -84,7 +84,7 @@ class Movie {
     const video = $(
       ".auto-size"
     ).attr("src");
-    const embed = "https://w.egybest.biz" + video;
+
     const downloadable_formats = [];
     $(".dls_table tbody tr").each((n, elm) => {
       const tds = $("td", elm);
@@ -113,7 +113,7 @@ class Movie {
       duration,
       description,
       cover,
-      embed,
+      video,
       downloadable_formats,
     };
   }
